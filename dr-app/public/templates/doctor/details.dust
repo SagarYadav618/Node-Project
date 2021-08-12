@@ -1,0 +1,28 @@
+{>"layouts/master" /}
+
+{<body}
+<div class="row">
+
+    <div class="large-8 columns book">
+        <h2>{book.title}</h2>
+        <ul class="bookInfo">
+            <li>Category: {book.category}</li>
+            <li>Experience: {book.author}</li>
+            <li>Qualification: {book.publisher}</li>
+        </ul>
+        <br>
+        <div class="price"><span>RS{book.price}</span></div>
+        <br>
+        <p>
+        {book.description}
+        </p>
+
+         <form method="post" action="/cart/{book._id}">
+            <input type="submit" class="button success" value="Add in Appointment-list" />
+            <input type="hidden" value="{_csrf}" name="_csrf" />
+         </form>
+    </div>
+
+</div>
+{/body}
+

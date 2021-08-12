@@ -1,0 +1,7 @@
+{>"layouts/manage" /}
+
+{<body}
+    <h2> Dr-Profile-Area </h2>
+    <p>Make profile Here</p>
+{/body}
+

@@ -1,0 +1,53 @@
+{
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test",
+    "build": "grunt build",
+    "all": "npm run build && npm run test",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "construx": "^1.0.0",
+    "construx-copier": "^1.0.0",
+    "construx-dustjs": "^1.1.0",
+    "construx-less": "^1.0.0",
+    "dust-makara-helpers": "^4.2.0",
+    "dustjs-helpers": "^1.7.3",
+    "ejs": "^3.1.6",
+    "eslint": "^7.32.0",
+    "express": "^4.12.2",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.17.2",
+    "kraken-js": "^2.0.0",
+    "makara": "^2.0.3",
+    "mongodb": "^4.1.0",
+    "mongoose": "^5.13.5",
+    "nodemon": "^2.0.12",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.1.0",
+    "requirejs": "^2.3.5"
+  },
+  "devDependencies": {
+    "grunt": "^1.4.1",
+    "grunt-cli": "^1.4.3",
+    "grunt-config-dir": "^0.3.2",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-requirejs": "^0.4.4",
+    "grunt-copy-to": "0.0.10",
+    "grunt-dustjs": "^1.4.0",
+    "grunt-eslint": "^23.0.0",
+    "grunt-makara-amdify": "^1.0.1",
+    "grunt-mocha-cli": "^7.0.0",
+    "mocha": "^9.0.3",
+    "supertest": "^6.1.4"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "license": "ISC"
+}

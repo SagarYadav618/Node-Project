@@ -1,0 +1,56 @@
+{>"layouts/master" /}
+
+
+{<title}
+    Appointment-list
+{/title}
+
+{<body}
+    <div class="row">
+        <div class="large-12 columns">
+            <h2>Appointment-Details<span><a href="/cart/remove">&nbsp;Delete-Appointment</a></span></h2>
+
+         {?cart.items}
+            <table>
+                <thead>
+                    <tr>
+                        <th width="650">Name</th>
+                        <th width="100">Patient</th>
+                        <th width="100">Cost</th>
+                        <th width="100">Select Appointment Date</th>
+                        
+                     </tr>
+                 </thead>
+                 <tbody>
+                    {#cart.items}
+                    <tr>
+                        <td><a href="doctor/details/{._id}">{.title}</a></td>
+                        <td>{.qty}</td>
+                        <td>Rs{@math key="{.price}" method="multiply" operand="{.qty}" /}</td>
+                        <td><input type="date" id="sagar" name="sagar"><td>
+                        
+                    </tr>
+                    {/cart.items}
+                  </tbody>
+            </table>
+
+
+         {:else}
+            <p>There are no Appointment in your Cart</p>
+         {/cart.items}
+        </div>
+</div>
+
+    <div class="row">
+        <div class="large-6 columns">
+            <h4>Total: <strong>Rs{cart.total}</strong></h4>
+        </div>
+        <div class="large-6 columns">
+            <form action="pages/about" >
+
+            <input type="submit" value="Book-Now" />
+            </div>
+            </form>
+        </div>
+        </div>
+{/body}
